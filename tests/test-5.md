@@ -8,7 +8,19 @@
 ![img](../assets/5/6.png)
 ![img](../assets/5/7.png)
 
-Python:
+Solutions with Languages:
+- [Python](test-5.md#python)
+- [Rust](test-5.md#rust)
+- [Go](test-5.md#go)
+- [Typescript](test-5.md#typescript)
+- [Javascript](test-5.md#javascript)
+- [Java](test-5.md#java-17)
+
+[Test cases](test-5.md#test-cases)
+
+### Python:
+<details><summary>Click to expand code</summary>
+
 ```python
 #!/bin/python3
 
@@ -17,8 +29,6 @@ import os
 import random
 import re
 import sys
-
-
 #
 # Complete the 'closestStraightCity' function below.
 #
@@ -73,16 +83,16 @@ if __name__ == '__main__':
     fptr.write('\n')
 
     fptr.close()
-
 ```
+</details>
 
-Rust:
+### Rust:
+<details><summary>Click to expand code</summary>
+
 ```rust
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, Write};
-
-
 /*
  * Complete the 'closestStraightCity' function below.
  *
@@ -152,8 +162,11 @@ fn main() {
     writeln!(&mut fptr).ok();
 }
 ```
+</details>
 
-Typescript:
+### Typescript:
+<details><summary>Click to expand code</summary>
+
 ```typescript
 'use strict';
 
@@ -179,9 +192,6 @@ process.stdin.on('end', function(): void {
 function readLine(): string {
     return inputLines[currentLine++];
 }
-
-
-
 /*
  * Complete the 'closestStraightCity' function below.
  *
@@ -244,10 +254,12 @@ function main() {
 
     ws.end();
 }
-
 ```
+</details>
 
-Go:
+### Go:
+<details><summary>Click to expand code</summary>
+
 ```go
 package main
 
@@ -259,9 +271,6 @@ import (
     "strconv"
     "strings"
 )
-
-
-
 /*
  * Complete the 'closestStraightCity' function below.
  *
@@ -362,8 +371,11 @@ func checkError(err error) {
     }
 }
 ```
+</details>
 
-Java 17:
+### Java 17:
+<details><summary>Click to expand code</summary>
+
 ```java
 import java.io.*;
 import java.math.*;
@@ -376,8 +388,6 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
-
-
 
 class Result {
 
@@ -396,7 +406,6 @@ class Result {
     // Write your code here
 
     }
-
 }
 
 public class Solution {
@@ -464,10 +473,12 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
 ```
+</details>
 
-JS
+### Javascript
+<details><summary>Click to expand code</summary>
+
 ```js
 'use strict';
 
@@ -492,9 +503,6 @@ process.stdin.on('end', function() {
 function readLine() {
     return inputString[currentLine++];
 }
-
-
-
 /*
  * Complete the 'closestStraightCity' function below.
  *
@@ -557,8 +565,24 @@ function main() {
     ws.end();
 }
 ```
+</details>
 
 ## Test case
+<details><summary>Click to expand code</summary>
+
+- Test case 0
+    - [Input](../assets/5/input000.txt)
+    - [Output](../assets/5/output000.txt)
+- Test case 1
+    - [Input](../assets/5/input001.txt)
+    - [Output](../assets/5/output001.txt)
+- Test case 2
+    - [Input](../assets/5/input002.txt)
+    - [Output](../assets/5/output002.txt)
+- Test case 3
+    - [Input](../assets/5/input003.txt)
+    - [Output](../assets/5/output003.txt)
+
 ```cmd
 0
 Expected Output
@@ -594,3 +618,8 @@ x:  [100, 200, 300, 400, 500]
 y:  [100, 200, 300, 400, 500]
 q:  ['green', 'red', 'blue', 'yellow', 'pink']
 ```
+</details>
+
+[Back to Test 4](test-4.md)
+
+[Next to Test 6](test-6.md)

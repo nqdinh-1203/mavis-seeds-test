@@ -6,7 +6,20 @@
 ![img](../assets/3/4.png)
 ![img](../assets/3/5.png)
 
-Python:
+Solutions with Languages:
+- [Python](test-3.md#python)
+- [Rust](test-3.md#rust)
+- [Go](test-3.md#go)
+- [Typescript](test-3.md#typescript)
+- [Javascript](test-3.md#javascript)
+- [Java](test-3.md#java-15)
+
+[Test cases](test-3.md#test-cases)
+
+
+### Python:
+<details><summary>Click to expand code</summary>
+
 ```python
 #!/bin/python3
 
@@ -15,7 +28,6 @@ import os
 import random
 import re
 import sys
-
 
 #
 # Complete the 'getMaxKnowledge' function below.
@@ -68,13 +80,15 @@ if __name__ == '__main__':
 
     fptr.close()
 ```
+</details>
 
-Rust:
+### Rust:
+<details><summary>Click to expand code</summary>
+
 ```rust
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, Write};
-
 
 /*
  * Complete the 'getMaxKnowledge' function below.
@@ -133,8 +147,11 @@ fn main() {
     writeln!(&mut fptr, "{}", result).ok();
 }
 ```
+</details>
 
-Typescript:
+### Typescript:
+<details><summary>Click to expand code</summary>
+
 ```typescript
 'use strict';
 
@@ -160,9 +177,6 @@ process.stdin.on('end', function(): void {
 function readLine(): string {
     return inputLines[currentLine++];
 }
-
-
-
 /*
  * Complete the 'getMaxKnowledge' function below.
  *
@@ -224,8 +238,11 @@ function main() {
     ws.end();
 }
 ```
+</details>
 
-Go:
+### Go:
+<details><summary>Click to expand code</summary>
+
 ```go
 package main
 
@@ -237,9 +254,6 @@ import (
     "strconv"
     "strings"
 )
-
-
-
 /*
  * Complete the 'getMaxKnowledge' function below.
  *
@@ -333,8 +347,11 @@ func checkError(err error) {
     }
 }
 ```
+</details>
 
-Java 15
+### Java 15
+<details><summary>Click to expand code</summary>
+
 ```java
 import java.io.*;
 import java.math.*;
@@ -427,8 +444,11 @@ public class Solution {
     }
 }
 ```
+</details>
 
-JS
+### Javascript
+<details><summary>Click to expand code</summary>
+
 ```js
 'use strict';
 
@@ -453,9 +473,6 @@ process.stdin.on('end', function() {
 function readLine() {
     return inputString[currentLine++];
 }
-
-
-
 /*
  * Complete the 'getMaxKnowledge' function below.
  *
@@ -514,8 +531,21 @@ function main() {
     ws.end();
 }
 ```
+</details>
 
 ## Test cases
+<details><summary>Click to expand code</summary>
+
+- Test case 0
+    - [Input](../assets/3/input000.txt)
+    - [Output](../assets/3/output000.txt)
+- Test case 1
+    - [Input](../assets/3/input001.txt)
+    - [Output](../assets/3/output001.txt)
+- Test case 2
+    - [Input](../assets/3/input002.txt)
+    - [Output](../assets/3/output002.txt)
+
 ```
 0
 Expected Output
@@ -563,3 +593,8 @@ e:  [102045011, 105914069, 29439088, 57835068, 94885180, 116984945, 133239089, 1
 a:  [229302, 248153, 309896, 119022, 797489, 208399, 870607, 766466, 374432, 831502, 53968, 628333, 187475, 233792, 900084, 987010, 979694, 27328, 207354, 624712, 538409, 216480, 902643, 928121, 751951, 723492, 804420, 328197, 828607, 497925, 472167, 560717, 363438, 89200, 106986, 216104, 976483, 823620, 509806, 790881, 676858, 345559, 56553, 488502, 723554, 422962, 172325, 697435, 309279, 120464, 627327, 482549, 429832, 386595, 708200, 778720, 787658, 890639, 789992, 849130, 226467, 298989, 207958, 602581, 746600, 347466, 661473, 811929, 179775, 412581, 189770, 999455, 383718, 504628, 616807, 419335, 281898, 91552, 986530, 715811, 179569, 414148, 3384, 656954, 508913, 880114, 216315, 703686, 689334, 550382, 701392, 278326, 671008, 333553, 270962, 214957, 514850, 248231, 422061, 621185, 371588, 664305, 2980, 357564, 441890, 670052, 68747, 390943, 181740, 347593, 287469, 977370, 612516, 20443, 396007, 469525, 3299, 430412, 357163, 6699, 863571, 958976, 387455, 482217, 793590, 179343, 114427, 883220, 141342, 104584, 884239, 454496, 965875, 122601, 731258, 571449, 443377, 480040, 537428, 138238, 172455, 273517, 971653, 34433, 811768, 911957, 327307, 576456, 126878, 452977, 45368, 601999, 854882, 473541, 371826, 973764, 943269, 851401, 122098, 58698, 76763, 801515, 385413, 981495, 696523, 514571, 480206, 758357, 445904, 53310, 521410, 335844, 347611, 497484, 90410, 193559, 649262, 401394, 958949, 41107, 768546, 832737, 197987, 404979, 22306, 994685, 589291, 905542, 186542, 799134, 811094, 852751, 792089, 10898, 235729, 710212, 829964, 238297, 641823, 640720, 415297, 882280, 704917, 344338, 127176, 798183, 407965, 635740, 353541, 829555, 510003, 963316, 518256, 66013, 837611, 853974, 654931, 402024, 469609, 816176, 700304, 891151, 284199, 899876, 668825, 168893, 253939, 593737, 944374, 338323, 876846, 115819, 81154, 165157, 980814, 886343, 571886, 291197, 803100, 611856, 91709, 953879, 815479, 572461, 643014, 569123, 729744, 265400, 847094, 429447, 359020, 9152, 773963, 979674, 97829, 998984, 819930, 585322, 106665, 72646, 69385, 739191, 631353, 157605, 97110, 374453, 13356, 90243, 927694, 531854, 152297, 313075, 599831, 890974, 708720, 891837, 470695, 9845, 587154, 451673, 495306, 387865, 825524, 160952, 411231, 915329, 502353]
 k:  55
 ```
+</details>
+
+[Back to Test 2](test-2.md)
+
+[Next to Test 4](test-4.md)
